@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components · Ze Design System</title>
+    <link rel="stylesheet" href="./assets/ze-system.css">
+    <script defer src="./assets/ze-gallery.js"></script>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="./index.html">Ze.</a>
+      <nav class="nav" aria-label="Gallery navigation">
+        <a href="./style-tiles.html">Foundations</a>
+        <a href="./component-board.html">Components</a>
+        <a href="./page-mockups.html">Page patterns</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="gallery-hero compact">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Components</span>
+          <h1>Components should carry state, motion, and rhythm.</h1>
+          <p class="lead">最终组件板展示 hover、selected、focus、loading、tabs、accordion 和不同内容密度。</p>
+        </div>
+        <div class="panel white" data-reveal>
+          <span class="kicker">Component rule</span>
+          <h2>Quiet components can still feel alive.</h2>
+          <p>丰富感来自分类、状态、动效和排版节奏，而不是把所有内容塞进同一种卡片。</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Headers</span>
+          <div>
+            <h2>Section header patterns.</h2>
+            <p class="lead">小标题可以有颜色和 Dot，但不要每个 section 都套同一个 uppercase eyebrow。</p>
+          </div>
+        </div>
+        <div class="component-grid three">
+          <article class="panel white" data-reveal>
+            <span class="kicker">Quiet marker</span>
+            <h3>学术研究</h3>
+            <p>适合列表、文章索引和阅读页。结构轻，不把标题包进大容器。</p>
+          </article>
+          <article class="panel tint-blue" data-reveal>
+            <span class="tag active">Annotated marker</span>
+            <h3>AI-assisted learning</h3>
+            <div class="hand-line blue" aria-hidden="true"></div>
+            <p>适合解释性模块和方法论页面。</p>
+          </article>
+          <article class="panel tint-violet" data-reveal>
+            <span class="meta">Research · Practice · Tools</span>
+            <h3>Dense marker</h3>
+            <p>适合工具页和资源页，信息密度更高，但仍保持白底和清晰层级。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Lists</span>
+          <div>
+            <h2>List stack is a core Ze pattern.</h2>
+            <p class="lead">用列表承载可扫描内容，避免所有项目都变成一样的 feature cards。</p>
+          </div>
+        </div>
+        <div class="list">
+          <div class="list-row" data-reveal>
+            <div class="meta">Research · 2026</div>
+            <div>
+              <h3>AI-assisted learning and teacher judgment</h3>
+              <p class="meta">Publication row with enough metadata to scan without a card grid.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="list-row" data-reveal>
+            <div class="meta">Practice · Tool</div>
+            <div>
+              <h3>Teacher-facing AI workflow kit</h3>
+              <p class="meta">Resource rows can share this primitive across future Ze websites.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+          <div class="list-row" data-reveal>
+            <div class="meta">Writing · Note</div>
+            <div>
+              <h3>From classroom signal to product judgment</h3>
+              <p class="meta">Hover shifts the row gently instead of adding a heavy hover card.</p>
+            </div>
+            <span class="arrow" aria-hidden="true">→</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Tags</span>
+          <div>
+            <h2>Tags and filters use Notion-like color, but with Ze restraint.</h2>
+            <p class="lead">低饱和色可以用于分类和高亮；active 状态由 Dot、边线和文字颜色共同表达。</p>
+          </div>
+        </div>
+        <div class="panel white" data-reveal>
+          <div class="tag-row" role="list" aria-label="Tag states">
+            <span class="tag tint-blue active">Research</span>
+            <span class="tag tint-amber">Practice</span>
+            <span class="tag tint-violet">Writing</span>
+            <span class="tag tint-rose">Boundary</span>
+            <span class="tag tint-green">Local green</span>
+            <span class="tag" aria-disabled="true">Disabled</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Text</span>
+          <div>
+            <h2>Callouts, quotes, and code panels.</h2>
+            <p class="lead">颜色像阅读辅助，不像装饰。Code panel 不再继承旧复古电脑窗口风格。</p>
+          </div>
+        </div>
+        <div class="component-grid three">
+          <div class="callout tint-blue" data-reveal>
+            <h3>Feedback</h3>
+            <p>AI can assist, but the teacher keeps final judgment.</p>
+          </div>
+          <div class="callout tint-amber" data-reveal>
+            <h3>Path</h3>
+            <p>Acquire → Deepen → Create becomes a progression path.</p>
+          </div>
+          <div class="callout tint-rose" data-reveal>
+            <h3>Boundary</h3>
+            <p>Do not let automated output become final evaluation.</p>
+          </div>
+        </div>
+        <div class="stack loose section-followup">
+          <div class="quote annotated" data-reveal>
+            AI 应当深度融入教师工作，但教师必须保持对教育过程的最终判断权和情感主导权。
+            <div class="hand-line rose" aria-hidden="true"></div>
+          </div>
+          <pre class="code-panel" data-reveal><code>&lt;article class=&quot;ze-article&quot;&gt;
+  &lt;figure class=&quot;ze-figure fit-wide&quot;&gt;
+    &lt;img src=&quot;concept.png&quot; alt=&quot;...&quot;&gt;
+    &lt;figcaption&gt;One figure explains one micro-concept.&lt;/figcaption&gt;
+  &lt;/figure&gt;
+&lt;/article&gt;</code></pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Figures</span>
+          <div>
+            <h2>Article figure block has placement variants.</h2>
+            <p class="lead">Production figures still use Ze Universe / article illustration rules；这里用 approved anchors 展示网页适配。</p>
+          </div>
+        </div>
+        <div class="component-grid three">
+          <figure class="figure fit-wide" data-reveal>
+            <img src="../assets/visual-anchors/approved/07_dot_symbol_grammar.png" alt="Approved Dot and symbol grammar visual anchor">
+            <figcaption class="caption">Wide inline figure: symbol grammar.</figcaption>
+          </figure>
+          <figure class="figure fit-side" data-reveal>
+            <img src="../assets/visual-anchors/approved/03_builder_state.png" alt="Approved Ze builder state visual anchor">
+            <figcaption class="caption">Side anchor: Builder State.</figcaption>
+          </figure>
+          <figure class="figure fit-thumb" data-reveal>
+            <img src="../assets/visual-anchors/approved/05_founder_state.png" alt="Approved Ze founder state visual anchor">
+            <figcaption class="caption">Thumbnail: controlled crop.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Controls</span>
+          <div>
+            <h2>Tabs and accordion are interactive.</h2>
+            <p class="lead">React Bits 给我们的启发是“组件应该有行为”；Ze 的版本保持轻量，不用强动效库。</p>
+          </div>
+        </div>
+        <div class="component-grid two">
+          <section class="panel white" data-tabs data-reveal>
+            <div class="tabs" role="tablist" aria-label="Ze component tabs">
+              <button class="tab" type="button" role="tab" data-tab="research" aria-selected="true">Research</button>
+              <button class="tab" type="button" role="tab" data-tab="practice" aria-selected="false">Practice</button>
+              <button class="tab" type="button" role="tab" data-tab="tools" aria-selected="false">Tools</button>
+            </div>
+            <div class="tab-panel" role="tabpanel" data-tab-panel="research">
+              <h3>Research tab</h3>
+              <p>Use for publications, reading notes, methods, and academic context.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" data-tab-panel="practice" hidden>
+              <h3>Practice tab</h3>
+              <p>Use for classroom experiments, product decisions, and applied resources.</p>
+            </div>
+            <div class="tab-panel" role="tabpanel" data-tab-panel="tools" hidden>
+              <h3>Tools tab</h3>
+              <p>Use for dense functional surfaces with filters, states, and results.</p>
+            </div>
+          </section>
+
+          <section class="accordion" data-reveal>
+            <div class="accordion-item">
+              <button class="accordion-button" type="button" data-accordion-button aria-expanded="true" aria-controls="acc-motion">Motion boundary</button>
+              <div class="accordion-panel" id="acc-motion">
+                Motion clarifies state. It does not decorate every section with the same entrance.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button" type="button" data-accordion-button aria-expanded="false" aria-controls="acc-symbol" >Symbol boundary</button>
+              <div class="accordion-panel" id="acc-symbol" hidden>
+                Dot and symbols are grammar only. They never become side characters.
+              </div>
+            </div>
+            <div class="accordion-item">
+              <button class="accordion-button" type="button" data-accordion-button aria-expanded="false" aria-controls="acc-color">Color boundary</button>
+              <div class="accordion-panel" id="acc-color" hidden>
+                Color can highlight, classify, and guide; it should stay low-saturation and local.
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Flow</span>
+          <div>
+            <h2>Step flow, path, and loading.</h2>
+            <p class="lead">顺序是真正有意义时才编号；Dot loading 是状态提示，不是角色表演。</p>
+          </div>
+        </div>
+        <div class="component-grid two">
+          <div class="panel tint-amber" data-reveal>
+            <div class="step-flow">
+              <div class="step-row">
+                <span class="step-dot" aria-hidden="true"></span>
+                <div><h3>Acquire</h3><p>Gather source material and classroom signals.</p></div>
+              </div>
+              <div class="hand-line amber" aria-hidden="true"></div>
+              <div class="step-row">
+                <span class="step-dot" aria-hidden="true"></span>
+                <div><h3>Deepen</h3><p>Turn signals into judgment, feedback, and method.</p></div>
+              </div>
+              <div class="hand-line amber" aria-hidden="true"></div>
+              <div class="step-row">
+                <span class="step-dot" aria-hidden="true"></span>
+                <div><h3>Create</h3><p>Package the output as writing, tools, or teaching material.</p></div>
+              </div>
+            </div>
+          </div>
+          <div class="panel white" data-reveal>
+            <span class="kicker">Loading state</span>
+            <h2>Thinking in progress</h2>
+            <p class="lead">Use a Dot rhythm for loading, analysis, or route transitions.</p>
+            <div class="loading-dots" aria-label="Loading"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <span>Components · Ze Design System</span>
+      <span>States and motion are part of the component contract.</span>
+    </footer>
+  </body>
+</html>

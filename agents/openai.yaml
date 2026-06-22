@@ -1,0 +1,7 @@
+interface:
+  display_name: "Ze Design System"
+  short_description: "Ze web design system and HTML skill"
+  brand_color: "#756A86"
+  default_prompt: "Use $ze-design-system to design or review a Ze-style web page."
+policy:
+  allow_implicit_invocation: true

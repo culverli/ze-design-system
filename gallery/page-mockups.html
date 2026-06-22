@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Page Patterns · Ze Design System</title>
+    <link rel="stylesheet" href="./assets/ze-system.css">
+    <script defer src="./assets/ze-gallery.js"></script>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="./index.html">Ze.</a>
+      <nav class="nav" aria-label="Gallery navigation">
+        <a href="./style-tiles.html">Foundations</a>
+        <a href="./component-board.html">Components</a>
+        <a href="./page-mockups.html">Page patterns</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="gallery-hero compact">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Page patterns</span>
+          <h1>Reusable page structures.</h1>
+          <p class="lead">最终页面模式覆盖 Home、Article Detail 和 Tool / Resource：同一套 Ze 语言会根据内容密度和任务目标调整结构。</p>
+        </div>
+        <figure class="hero-visual figure fit-side" data-reveal>
+          <img src="../assets/visual-anchors/approved/01_core_character.png" alt="Approved Ze core character visual anchor">
+          <figcaption class="caption">Ze can appear when useful, never just to fill space.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Home</span>
+          <div>
+            <h2>Dual Track Home.</h2>
+            <p class="lead">首页先保留身份与近况，再把 Academic 和 Practice 做成等重入口。</p>
+          </div>
+        </div>
+        <div class="mock-frame" data-reveal>
+          <div class="stack loose">
+            <div>
+              <span class="tag tint-blue active">Research</span>
+              <span class="tag tint-amber active">Build</span>
+              <span class="tag tint-violet active">Teach</span>
+            </div>
+            <h2 class="mock-hero-title">把课堂里的真实问题，转化成研究、工具和可解释的方法。</h2>
+            <div class="current-strip tint-amber">
+              <span class="kicker">近况</span>
+              <p>2026 年 7 月，将作为 Captain 参加由深圳明湾学校举办的微光黑客松。</p>
+            </div>
+            <div class="component-grid two">
+              <article class="panel white track-card">
+                <span class="tag tint-blue active">Academic track</span>
+                <h3>研究 AI 时代的学习关系</h3>
+                <p>教师判断、反馈、关怀、协作学习和技术支持。</p>
+                <div class="hand-line blue" aria-hidden="true"></div>
+              </article>
+              <article class="panel white track-card">
+                <span class="tag tint-amber active">Practice track</span>
+                <h3>建造面向教师的 AI 工作流</h3>
+                <p>课程、工具、资源和产品现场的实践记录。</p>
+                <div class="hand-line amber rough-pencil" aria-hidden="true"></div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">System note</span>
+          <div>
+            <h2>Dot Grammar supports interaction, not homepage content.</h2>
+            <p class="lead">符号可用于 cursor、focus、hover、loading 和 section marker，但不替代身份、研究、实践和近况。</p>
+          </div>
+        </div>
+        <div class="mock-frame" data-reveal>
+          <div class="split reverse">
+            <div class="panel white">
+              <div class="symbol-row" aria-hidden="true">
+                <span class="symbol dot"></span>
+                <span class="symbol circle"></span>
+                <span class="symbol square"></span>
+                <span class="symbol triangle"></span>
+                <span class="symbol infinity"></span>
+              </div>
+              <div class="hand-line rough-path" aria-hidden="true"></div>
+              <p>Dot / Circle / Square / Triangle / Infinity: focus, question, structure, growth, continuity.</p>
+            </div>
+            <div>
+              <span class="kicker">Design language only</span>
+              <h2 class="mock-hero-title">符号服务网页状态，不替个人内容表达。</h2>
+              <p class="lead">Ze、Dot 和抽象符号可以支持交互与视觉记忆点；首页仍由身份、研究、实践和近况组织。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Article</span>
+          <div>
+            <h2>Calm Reading Column.</h2>
+            <p class="lead">适合长文：阅读栏为主，右侧 rail 很轻，figure 作为一个概念锚点出现。</p>
+          </div>
+        </div>
+        <article class="mock-frame" data-reveal>
+          <div class="reading-layout">
+            <div class="reading-column stack loose">
+              <div>
+                <div class="tag-row">
+                  <span class="tag tint-blue active">教师角色</span>
+                  <span class="tag tint-violet">AI 政策</span>
+                  <span class="tag tint-amber">生成式 AI</span>
+                </div>
+                <h2>三份文件，讲了什么？关于教师与 AI，你需要知道的事</h2>
+                <p class="lead">梳理 UNESCO《教师人工智能能力框架》、教育部《应用指引》和《2026 中国教师 GAI 应用报告》的核心内容与共同立场。</p>
+              </div>
+              <p>教育领域正在从“师生关系”转向“教师—AI—学生”的三元关系。这种转变不是修辞，而是教学现场正在发生的结构变化。</p>
+              <figure class="figure fit-wide">
+                <img src="../assets/visual-anchors/approved/04_teacher_state.png" alt="Approved Ze teacher state visual anchor">
+                <figcaption class="caption">Teacher State can anchor a concept only when Ze explains something.</figcaption>
+              </figure>
+              <div class="quote">AI 应当深度融入教师工作，但教师必须保持对教育过程的最终判断权和情感主导权。</div>
+            </div>
+            <aside class="side-rail" aria-label="Article outline">
+              <span class="tag tint-blue active">Outline</span>
+              <span>全球参照表</span>
+              <span>行为红线</span>
+              <span>共同立场</span>
+              <span>教师判断</span>
+            </aside>
+          </div>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Article Rule</span>
+          <div>
+            <h2>Content-led article annotation.</h2>
+            <p class="lead">文章页先根据正文内容判断，不预设必须出现多少卡片、quotation 或动效；设计系统只提供可插入的组件语言。</p>
+          </div>
+        </div>
+        <article class="mock-frame" data-reveal>
+          <div class="stack loose">
+            <div>
+              <span class="kicker">AI · Teacher · Judgment</span>
+              <h2 class="mock-hero-title">教师不是被 AI 替代的环节，而是判断和关怀的最终接口。</h2>
+              <p class="lead">示例：当正文真的包含框架、路径、边界或关键引用时，才把这些位置转化为视觉组件。</p>
+            </div>
+            <div class="component-grid three">
+              <div class="callout tint-blue">
+                <h3>可拆成卡片</h3>
+                <p>正文提出清晰框架、分类或对比时，才使用 callout / card。</p>
+              </div>
+              <div class="callout tint-amber">
+                <h3>可做成路径</h3>
+                <p>正文有真实顺序、因果或方法步骤时，才加入 path / step flow。</p>
+              </div>
+              <div class="callout tint-rose">
+                <h3>可变成引用</h3>
+                <p>正文出现关键判断、原文引用或边界声明时，才使用 quote。</p>
+              </div>
+            </div>
+            <div class="hand-line amber rough-path" aria-hidden="true"></div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Tool / Resource</span>
+          <div>
+            <h2>Tool / Resource page anchor.</h2>
+            <p class="lead">工具/资源页面比首页更紧凑、更功能化，使用 filters、tabs、列表和结果状态。</p>
+          </div>
+        </div>
+        <div class="mock-frame" data-reveal>
+          <div class="tool-surface">
+            <aside class="panel white">
+              <span class="kicker">Filters</span>
+              <div class="control-list">
+                <div class="control-item"><span class="tag tint-blue active">Research</span></div>
+                <div class="control-item"><span class="tag tint-amber">Classroom</span></div>
+                <div class="control-item"><span class="tag tint-violet">Workflow</span></div>
+              </div>
+            </aside>
+            <section class="stack">
+              <div>
+                <h2>Teacher AI workflow library</h2>
+                <p class="lead">A reusable tool surface should be denser, calmer, and more task-focused than a homepage.</p>
+              </div>
+              <div class="component-grid two">
+                <article class="panel white">
+                  <span class="meta">Prompt kit</span>
+                  <h3>Feedback drafting with teacher judgment</h3>
+                  <p>Structured enough for repeated use, quiet enough for daily work.</p>
+                </article>
+                <article class="panel tint-blue">
+                  <span class="meta">Checklist</span>
+                  <h3>AI lesson-plan review</h3>
+                  <p>Use color for status and grouping, not decorative excitement.</p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <span>Page patterns · Ze Design System</span>
+      <span>Reusable structures for home, articles, and tool surfaces.</span>
+    </footer>
+  </body>
+</html>

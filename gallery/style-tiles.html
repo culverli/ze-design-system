@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Foundations · Ze Design System</title>
+    <link rel="stylesheet" href="./assets/ze-system.css">
+    <script defer src="./assets/ze-gallery.js"></script>
+  </head>
+  <body>
+    <header class="shell topbar">
+      <a class="brand" href="./index.html">Ze.</a>
+      <nav class="nav" aria-label="Gallery navigation">
+        <a href="./style-tiles.html">Foundations</a>
+        <a href="./component-board.html">Components</a>
+        <a href="./page-mockups.html">Page patterns</a>
+      </nav>
+    </header>
+
+    <main class="shell">
+      <section class="gallery-hero compact">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Foundations</span>
+          <h1>The final visual language.</h1>
+          <p class="lead">Ze Web Design System 以白底、局部低饱和色、Ze Rough Line、Dot 交互和受控插图适配作为最终基础。</p>
+        </div>
+        <div class="hero-visual panel white" data-reveal>
+          <div class="symbol-row" aria-hidden="true">
+            <span class="symbol dot"></span>
+            <span class="symbol circle"></span>
+            <span class="symbol square"></span>
+            <span class="symbol triangle"></span>
+            <span class="symbol infinity"></span>
+          </div>
+          <p>Symbols stay abstract: focus, question, structure, growth, continuity.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Routes</span>
+          <div>
+            <h2>Four foundation layers.</h2>
+            <p class="lead">这些不是可选路线，而是最终语言的四个层：白底、低饱和阅读标记、手绘结构线和抽象交互符号。</p>
+          </div>
+        </div>
+        <div class="option-grid four">
+          <article class="option-card" data-reveal>
+            <span class="tag tint-blue active">Canvas</span>
+            <h3>白底、黑灰、局部高光</h3>
+            <p>最贴近 Ze Universe 底盘。颜色只在小标题、标签、callout 和路径里出现。</p>
+            <div class="hand-line" aria-hidden="true"></div>
+          </article>
+          <article class="option-card tint-blue" data-reveal>
+            <span class="tag active">Highlight</span>
+            <h3>更明显的低饱和阅读标记</h3>
+            <p>适合文章、资源和知识页：用蓝、紫、玫瑰、琥珀做阅读层级。</p>
+            <div class="hand-line blue" aria-hidden="true"></div>
+          </article>
+          <article class="option-card tint-amber" data-reveal>
+            <span class="tag active">Rough Line</span>
+            <h3>更强的手绘结构线</h3>
+            <p>适合解释流程、方法、状态变化。需要控制用量，避免变成儿童涂鸦。</p>
+            <div class="hand-line amber rough-pencil" aria-hidden="true"></div>
+          </article>
+          <article class="option-card tint-violet" data-reveal>
+            <span class="tag active">Dot Grammar</span>
+            <h3>把 Dot 放进交互</h3>
+            <p>光标、focus、active tab、loading、section marker 都可以用 Dot，但不能人格化。</p>
+            <div class="loading-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Color</span>
+          <div>
+            <h2>White canvas, local low-saturation color.</h2>
+            <p class="lead">颜色不需要每次都有语义解释，但必须低饱和、局部、可读。绿色可以存在，但不再是整站背景。</p>
+          </div>
+        </div>
+        <div class="swatch-grid">
+          <div class="swatch tint-blue" data-reveal><strong>Blue mist</strong><code>#eef5f8 / #476a80</code><span>Research, system note, feedback.</span></div>
+          <div class="swatch tint-violet" data-reveal><strong>Violet ash</strong><code>#f2eff7 / #6b627b</code><span>Thinking, reflection, category.</span></div>
+          <div class="swatch tint-amber" data-reveal><strong>Soft amber</strong><code>#f8f1df / #80652d</code><span>Highlight, path, quote emphasis.</span></div>
+          <div class="swatch tint-rose" data-reveal><strong>Quiet rose</strong><code>#f7eeee / #875d66</code><span>Boundary, warning, emotional friction.</span></div>
+          <div class="swatch tint-green" data-reveal><strong>Muted green</strong><code>#eef4ee / #61745f</code><span>Useful locally, never the site canvas.</span></div>
+          <div class="swatch" data-reveal><strong>Ze neutral</strong><code>#ffffff / #141414 / #dedfd9</code><span>The real foundation.</span></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Line</span>
+          <div>
+            <h2>Four Ze Rough Line modes.</h2>
+            <p class="lead">线条采用 Excalidraw / Rough.js 式的双描边、轻微漂移和可控粗细变化，不再依赖僵硬直线。</p>
+          </div>
+        </div>
+        <div class="option-grid four">
+          <article class="panel white line-card" data-reveal>
+            <span class="tag active">1 · rough-hairline</span>
+            <h3>结构边框</h3>
+            <div class="hand-line" aria-hidden="true"></div>
+            <p>默认模式。用于卡片边框、section frame、figure frame 和轻量分割。</p>
+          </article>
+          <article class="panel tint-amber line-card" data-reveal>
+            <span class="tag active">2 · rough-pencil</span>
+            <h3>分割标注</h3>
+            <div class="hand-line amber rough-pencil" aria-hidden="true"></div>
+            <p>比 hairline 更可见。用于 divider、underline、callout separator 和文章标注。</p>
+          </article>
+          <article class="panel tint-blue line-card" data-reveal>
+            <span class="tag active">3 · rough-strong</span>
+            <h3>工具选中</h3>
+            <div class="hand-line blue rough-strong" aria-hidden="true"></div>
+            <p>只给 tool controls、CTA、selected cards 和 product modules 使用。</p>
+          </article>
+          <article class="panel tint-rose line-card" data-reveal>
+            <span class="tag active">4 · rough-path</span>
+            <h3>概念路径</h3>
+            <div class="hand-line rose rough-path" aria-hidden="true"></div>
+            <p>用于 Dot path、conceptual flow、article figure 和真实内容关系。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section divided">
+        <div class="section-head">
+          <span class="marker">Motion</span>
+          <div>
+            <h2>Motion as a quiet component family.</h2>
+            <p class="lead">这个页面已经启用 Dot cursor、hover lift 和 reveal。它们是可确认的真实交互，不是文档里的空话。</p>
+          </div>
+        </div>
+        <div class="split">
+          <div class="stack loose">
+            <div class="callout tint-blue" data-reveal>
+              <h3>Cursor</h3>
+              <p>细指针设备上会出现小黑点 cursor；hover 到链接、按钮、卡片时会扩成 focus ring。</p>
+            </div>
+            <div class="callout tint-violet" data-reveal>
+              <h3>Reveal</h3>
+              <p>内容默认可见逻辑不依赖动画；reveal 只是增强进入节奏，并支持 reduced motion。</p>
+            </div>
+            <div class="callout tint-amber" data-reveal>
+              <h3>Hover</h3>
+              <p>组件轻微上移、边线变深，不使用弹跳、发光或夸张缩放。</p>
+            </div>
+          </div>
+          <div class="panel white" data-reveal>
+            <span class="kicker">Live sample</span>
+            <h2>Dot marks focus, not personality.</h2>
+            <p class="lead">Dot 可以表达 focus、pause、possibility、continuation，但永远不是角色。</p>
+            <div class="mock-nav">
+              <button class="tag tint-blue active" type="button">Focus</button>
+              <button class="tag tint-amber" type="button">Hover</button>
+              <button class="tag tint-rose" type="button">Loading</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <span class="marker">Figures</span>
+          <div>
+            <h2>Illustration placement needs size modes.</h2>
+            <p class="lead">同一张 Ze 视觉锚点在不同页面位置应该有不同的尺寸和留白策略，而不是僵硬塞满。</p>
+          </div>
+        </div>
+        <div class="option-grid four">
+          <figure class="figure fit-hero" data-reveal>
+            <img src="../assets/visual-anchors/approved/03_builder_state.png" alt="Approved Ze builder state visual anchor">
+            <figcaption class="caption">Hero spot</figcaption>
+          </figure>
+          <figure class="figure fit-side" data-reveal>
+            <img src="../assets/visual-anchors/approved/02_research_state.png" alt="Approved Ze research state visual anchor">
+            <figcaption class="caption">Side anchor</figcaption>
+          </figure>
+          <figure class="figure fit-wide" data-reveal>
+            <img src="../assets/visual-anchors/approved/07_dot_symbol_grammar.png" alt="Approved Dot and symbol grammar visual anchor">
+            <figcaption class="caption">Inline figure</figcaption>
+          </figure>
+          <figure class="figure fit-thumb" data-reveal>
+            <img src="../assets/visual-anchors/approved/04_teacher_state.png" alt="Approved Ze teacher state visual anchor">
+            <figcaption class="caption">Thumbnail crop</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+
+    <footer class="shell footer">
+      <span>Foundations · Ze Design System</span>
+      <span>Final tokens, line language, motion, and anchor placement.</span>
+    </footer>
+  </body>
+</html>
