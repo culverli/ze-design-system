@@ -26,6 +26,8 @@ Content surfaces should use Ze Rough Line frames when their boundary is visible.
 
 Do not leave a content surface with only a rigid `border: 1px solid` treatment. Use `rough-hairline` for default frames and `rough-strong` only for selected, active, or CTA-like surfaces.
 
+For generated static HTML/CSS, implement the visible frame with SVG/canvas output or the responsive mask/pseudo-element pattern from `gallery/assets/ze-system.css`. A transparent CSS border may support sizing, but the visible line must come from the rough renderer.
+
 Keep small interaction chrome more stable: tags, tab pills, focus rings, nav links, form field internals, and symbol primitives may use clean geometric borders because scannability matters more there.
 
 ### Section Header
