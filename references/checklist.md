@@ -8,7 +8,10 @@
 - [ ] The default page canvas is white, not gray-green, beige, cream, or warm paper.
 - [ ] Low-saturation color is used with restraint for hierarchy, highlights, labels, states, or local mood.
 - [ ] Ze Rough Line uses confirmed Excalidraw / Rough.js-style behavior: double-pass stroke, slight drift, mild bowing, and controlled roughness.
+- [ ] Rough Line is rendered by Rough.js, generated SVG, or CSS mask/pseudo-elements; `rough-*` class names or design labels alone are not accepted.
 - [ ] Cards, blocks, figures, callouts, code panels, mock frames, current strips, and meaningful separators use rough frames/dividers when they need visible boundaries.
+- [ ] Content surfaces do not use visible clean `border: 1px solid`, straight `hr`, inset shadow lines, or single-pass pseudo-element lines as their final boundary.
+- [ ] Any remaining visible clean borders are limited to stable UI chrome: navigation, focus rings, tags, tab pills, form internals, simple icons, or dense tables.
 - [ ] Stable UI chrome stays stable: navigation, focus rings, small tags, tab pills, dense form/table internals, and symbol primitives are not roughened without reason.
 - [ ] Ze symbols remain abstract and are not personified.
 - [ ] Ze symbols are not used as Portfolio homepage content; they support interaction, structure, or design language only.
@@ -31,6 +34,7 @@
 - [ ] The page has at least one structural richness device: sticky rail, annotated flow, list stack, figure block, tabs, or accordion.
 - [ ] Lines choose the right mode intentionally: `rough-hairline`, `rough-pencil`, `rough-strong`, or `rough-path`.
 - [ ] Rough frames align to their surfaces without clipping text, covering images, creating double borders, or floating away from the card edge.
+- [ ] Roughness is visible at normal screenshot scale without turning into noisy doodles; adjust opacity, stroke width, or color if it reads as a plain straight line.
 - [ ] Tags, highlights, and callouts feel Notion-like: useful, quiet, and low-saturation.
 - [ ] Mobile layout is reorganized, not simply squeezed.
 - [ ] Cards are used only when they create comparison, grouping, or action clarity.
@@ -44,4 +48,5 @@
 - [ ] A 16:9 article figure or diagram clarifies a concept.
 - [ ] Components feel reusable beyond Portfolio.
 - [ ] The design has been checked for AI-looking scaffolds: identical card grids, repeated section kickers, gradient text, generic shadows, and decorative motion.
+- [ ] CSS has been searched for `border:`, `border-bottom`, `hr`, and separator pseudo-elements; each visible clean line has a reason or has been replaced.
 - [ ] Strong visual directions are named clearly enough that they could later become reusable Ze profiles or variants if the user approves.
