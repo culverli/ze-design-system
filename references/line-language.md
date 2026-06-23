@@ -58,6 +58,8 @@ Keep stable geometric lines for:
 
 If a component is a content surface, do not leave only a straight CSS border. Use an SVG/canvas rough frame, a generated rough SVG, or a CSS mask fallback that visibly behaves like an Excalidraw/Rough.js line.
 
+Visible `border: 1px solid`, straight `hr`, clean `box-shadow` inset lines, or single-pass pseudo-element rules do not count as Ze Rough Line for content surfaces. They are acceptable only for stable UI chrome listed above.
+
 ## Usage Rules
 
 Use rough lines for:
@@ -89,6 +91,29 @@ When generating HTML/SVG prototypes:
 - Use CSS masks only as a fallback for simple repeated lines or content frames.
 - For CSS fallback frames, build the frame from four edge masks: top/bottom horizontal rough lines and left/right vertical rough lines. Do not stretch one full-rectangle mask across arbitrary card ratios; it can shrink, drift, or float inside the card.
 - Do not pass `fill` for borders and dividers. In Rough.js, a `fill` value can trigger hachure-like fills; use fill only when an intentional sketch fill is required.
+
+## Minimum Implementation Contract
+
+A generated page passes the Ze Rough Line requirement only when all visible rough surfaces use one of these mechanisms:
+
+- Rough.js or another canvas/SVG rough renderer with deterministic settings.
+- SVGs produced by `scripts/generate-rough-lines.mjs`.
+- Responsive CSS masks/pseudo-elements equivalent to `gallery/assets/ze-system.css`.
+
+For standalone static HTML/CSS, adapt these existing helpers instead of inventing a plain border system:
+
+- Root mask tokens: `--rough-hairline-mask`, `--rough-pencil-mask`, `--rough-strong-mask`, `--rough-path-loop-mask`, and `--rough-vertical-mask`.
+- Content-surface frame: a positioned element with `border: 1px solid transparent`, plus a `::after` pseudo-element using four masks: top, bottom, left, and right.
+- Divider/underline: `.hand-line::before` or an equivalent pseudo-element masked with `--rough-hairline-mask`, `--rough-pencil-mask`, or `--rough-strong-mask`.
+- List separators: row-level `::after` rough masks instead of clean bottom borders.
+
+Use a normal CSS border only as an invisible sizing aid, for example `border: 1px solid transparent`. The visible boundary must come from the rough SVG/canvas/mask layer.
+
+Before delivery, inspect the generated CSS:
+
+- If a selector for a card, panel, callout, figure, current strip, mock frame, code panel, or list row has a visible `border:` or clean separator, replace it with a rough renderer.
+- If a selector for navigation, focus, tags, form internals, tab pills, icons, or dense tables has a visible clean line, keep it only when the line improves scannability.
+- If the rough line is too faint to notice at normal screenshot scale, increase color contrast, opacity, stroke width, or mode before calling it done.
 
 Script example:
 
